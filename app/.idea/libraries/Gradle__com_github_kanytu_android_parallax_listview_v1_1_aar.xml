@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.kanytu:android-parallax-listview:v1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89da2cbbfd421f3b5e2cd037eb06b669/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89da2cbbfd421f3b5e2cd037eb06b669/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kanytu/android-parallax-listview/v1.1/320c85dd34cf865941d3854a9a2b907e96857e79/android-parallax-listview-v1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

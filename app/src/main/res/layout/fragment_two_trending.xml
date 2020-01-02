@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout_two_trending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        app:refreshType="smartisan">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_two_trending"
+            android:layout_width="350dp"
+            android:layout_height="fill_parent"
+            android:dividerHeight="10dp"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_fragment_two_trending"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:SpinKit_Color="@color/red" />
+
+
+</RelativeLayout>

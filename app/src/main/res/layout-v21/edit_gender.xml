@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/back_Edit_gender"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        app:srcCompat="@drawable/back_profile_edit"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/edit_gender"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/done_Edit_gender"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:text="@string/done"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/style_button"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginRight="270dp"
+        />
+
+    <View
+        android:layout_width="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+    <RadioGroup
+        android:id="@+id/gender_Edit_gender"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/male"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/female"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_edit_gender"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:SpinKit_Color="@color/red" />
+
+</RelativeLayout>

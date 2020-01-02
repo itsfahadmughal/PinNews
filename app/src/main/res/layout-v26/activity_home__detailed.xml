@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_Detailed">
+
+    <ImageButton
+        android:id="@+id/back_Home_Detailed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@null"
+        app:srcCompat="@drawable/back_profile_edit"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/pinButton_Home_Detailed"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="300dp"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo" />
+
+    <View
+        android:layout_width="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_Home_Detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#333"
+                android:textSize="22sp"
+                android:hint="@string/title"
+                android:textStyle="bold"
+                android:justificationMode="inter_word"
+                />
+
+            <ImageView
+                android:id="@+id/image_Home_Detailed"
+                android:layout_width="340dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/todo" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/content_Home_Detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#333"
+                android:textSize="18sp"
+                android:justificationMode="inter_word"
+                android:breakStrategy="balanced" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="240dp"
+                android:text="@string/swap_news"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:textStyle="italic"
+                android:onClick="swapFunction"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/date_entry_Home_Detailed"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/newstag_Home_Detailed"
+        />
+
+    <TextView
+        android:id="@+id/newstag_Home_Detailed"
+        android:layout_alignParentBottom="true"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_home_detailed"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:SpinKit_Color="@color/red" />
+</RelativeLayout>

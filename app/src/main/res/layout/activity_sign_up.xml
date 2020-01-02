@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/antonio_bold"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+
+    <EditText
+        android:id="@+id/name_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:paddingRight="20dp"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="textCapWords"
+        android:textSize="12sp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/style_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/email_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/style_edittext"
+        android:textColorHint="@color/black"
+        android:paddingRight="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+        android:id="@+id/password_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="325dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/style_edittext"
+        android:hint="@string/password"
+        app:drawable_show="@drawable/uneye"
+        app:drawable_hide="@drawable/eye"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="12sp"
+        />
+
+
+    <Button
+        android:id="@+id/create_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/style_button"
+        android:text="@string/cont"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:onClick="confirmInput"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="415dp"
+        android:text="@string/or_login_with"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_Signup"
+        android:layout_height="40dp"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/style_fb_button"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/f_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/style_fb_button"
+        android:text="@string/continue_with_facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:onClick="fb_call"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/otp_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/style_edittext"
+        android:textColorHint="@color/black"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:hint="@string/enter_verification_code"
+        android:inputType="number"
+        android:importantForAutofill="no" tools:targetApi="o"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/otp_button_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/style_button"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/g_Signup"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/style_g_button"
+        android:text="@string/continue_with_gmail"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <Button
+        android:id="@+id/have_Signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/style_button"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginRight="-7dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="@string/button"
+        />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_signup"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:SpinKit_Color="@color/red" />
+
+
+</RelativeLayout>

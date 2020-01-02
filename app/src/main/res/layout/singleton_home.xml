@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="361dp"
+    android:background="@color/grey">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="355dp"
+        android:background="@color/black"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_singleton_Home"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#333"
+                    android:hint="@string/title_not_available"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+
+                <ImageButton
+                    android:id="@+id/pin_singleton_Home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seemore_view_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/image_singleton_Home"
+                    android:layout_width="350dp"
+                    android:layout_height="155dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/todo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/content_singleton_Home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/content_not_available"
+                        android:textColor="#333"
+                        android:textSize="14sp"
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+
+                    <!--TextView
+                        android:id="@+id/see_more_Home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginLeft="245dp"
+                        android:layout_marginRight="245dp"
+                        android:text="@string/your_string_here"
+                        android:textStyle="italic"
+                        android:textColor="@color/red"
+                        android:clickable="true"
+                        android:focusable="true"
+                        /-->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#DCDCDC"
+                android:minWidth="1dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:id="@+id/likeText_singleton_Home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:hint="@string/_5_likes"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/likeButton_singleton_Home"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:src="@drawable/unlike"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/todo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/shareText_singleton_Home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:hint="@string/_5_shares"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/shareButton_singleton_Home"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        android:contentDescription="@string/todo"
+                        android:rotation="330"
+                        card_view:srcCompat="@drawable/share" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_view_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/_0_views"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="180dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

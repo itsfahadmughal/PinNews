@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="@string/pinnews" />
+
+    <EditText
+        android:id="@+id/email_Signin"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/style_edittext"
+        android:textColorHint="@color/black"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+        android:id="@+id/password_Signin"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="@drawable/style_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textColorHint="@color/black"
+        app:drawable_show="@drawable/uneye"
+        app:drawable_hide="@drawable/eye"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/login_Signin"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/style_button"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/login_Signin"
+        android:layout_marginTop="370dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="forgetPassword"
+        android:layout_alignRight="@id/login_Signin" />
+
+    <EditText
+        android:id="@+id/otp_Signin"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/style_edittext"
+        android:textColorHint="@color/black"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:hint="@string/enter_verification_code"
+        android:inputType="number"
+        android:importantForAutofill="no" tools:targetApi="o"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/otp_enter_Signin"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="455dp"
+        android:background="@drawable/style_button"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_login"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:SpinKit_Color="@color/red" />
+
+</RelativeLayout>

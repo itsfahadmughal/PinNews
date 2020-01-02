@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/back_Profile_edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        app:srcCompat="@drawable/back_profile_edit"
+        android:contentDescription="@string/todo"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/edit_your_profile"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="61dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_picture"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dp_Profile_edit"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#11000000"/>
+
+
+
+            <ImageButton
+                android:id = "@+id/dp_BProfile_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/edit_profile_all"
+                android:background="@null"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                android:layout_marginTop="150dp"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="210dp"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/name_Profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:textColor="@color/black"
+                android:layout_marginTop="240dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                />
+
+            <ImageButton
+                android:id="@+id/name_BProfile_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="225dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginRight="290dp"
+                android:background="@null"
+                app:srcCompat="@drawable/edit_profile_all"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="280dp"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address"
+                android:textColor="@color/black"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/email_Profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_address"
+                android:textColor="@color/black"
+                android:layout_marginTop="310dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="350dp"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:layout_marginTop="360dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/location_Profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/location"
+                android:textColor="@color/black"
+                android:layout_marginTop="380dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                />
+
+            <ImageButton
+                android:id="@+id/location_BProfile_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="365dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginRight="290dp"
+                android:background="@null"
+                app:srcCompat="@drawable/edit_profile_all"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="420dp"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/black"
+                android:layout_marginTop="430dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/dob_Profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/dob"
+                android:textColor="@color/black"
+                android:layout_marginTop="450dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                />
+
+            <ImageButton
+                android:id="@+id/dob_BProfile_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="435dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginRight="290dp"
+                android:background="@null"
+                app:srcCompat="@drawable/edit_profile_all"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="490dp"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gend"
+                android:textColor="@color/black"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/gender_Profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/gend"
+                android:textColor="@color/black"
+                android:layout_marginTop="520dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                />
+
+            <ImageButton
+                android:id="@+id/gender_BProfile_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="505dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginRight="290dp"
+                android:background="@null"
+                app:srcCompat="@drawable/edit_profile_all"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="560dp"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_no"
+                android:textColor="@color/black"
+                android:layout_marginTop="570dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/phone_Profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:textColor="@color/black"
+                android:layout_marginTop="590dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20sp"
+                />
+
+            <ImageButton
+                android:id="@+id/phone_BProfile_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="575dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginRight="290dp"
+                android:background="@null"
+                app:srcCompat="@drawable/edit_profile_all"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="630dp"
+                android:layout_height="1dp"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:layout_marginTop="640dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="40dp"
+                />
+
+            <ImageButton
+                android:id="@+id/password_BProfile_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="645dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginRight="290dp"
+                android:background="@null"
+                app:srcCompat="@drawable/edit_profile_all"
+                android:contentDescription="@string/todo" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_Profile_Edit"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:SpinKit_Color="@color/red" />
+</RelativeLayout>

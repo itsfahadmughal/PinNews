@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp">
+
+
+        <ImageButton
+            android:id="@+id/back_about_us"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            app:srcCompat="@drawable/back_profile_edit"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/about_us"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_developers"
+                android:textSize="24sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <!-- Sohaib -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/sohaib" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/sohaib_ahmed"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/sohaib_email"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <ImageButton
+                            android:id="@+id/sohaib_phone"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:contentDescription="@string/todo"
+                            android:focusable="true"
+                            app:srcCompat="@drawable/phone" />
+                        
+                        <ImageButton
+                            android:id="@+id/sohaib_fb"
+                            android:layout_width="30dp"
+                            android:contentDescription="@string/todo"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:src="@drawable/fb"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/sohaib_gmail"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/gmail"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Fahad -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/fahad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/fahad_name"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/fahad_email"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <ImageButton
+                            android:id="@+id/fahad_phone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:contentDescription="@string/todo"
+                            android:background="@null"
+                            android:layout_gravity="center_vertical"
+                            app:srcCompat="@drawable/phone"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp" />
+
+                        <ImageButton
+                            android:id="@+id/fahad_fb"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:contentDescription="@string/todo"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@null"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/fb"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp" />
+
+                        <ImageButton
+                            android:id="@+id/fahad_gmail"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:background="@null"
+                            android:contentDescription="@string/todo"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/gmail"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Talha -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/talha" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/talha"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/talhasahi86_gmail_com"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/talha_phone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/todo"
+                        app:srcCompat="@drawable/phone"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/talha_fb"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fb"
+                        android:layout_marginLeft="15dp"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginStart="15dp" />
+
+                    <ImageButton
+                        android:id="@+id/talha_gmail"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/gmail"
+                        android:layout_marginLeft="15dp"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginStart="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_manager"
+                android:textSize="24sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+
+            <!-- Sir Zuhaib -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/zuhaib" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/zuhaib_bajwa"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/zuhaib_email"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/zuhaib_phone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/phone"
+                        android:layout_marginLeft="35dp"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginStart="35dp" />
+
+                    <ImageButton
+                        android:id="@+id/zuhaib_fb"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fb"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp" />
+
+                    <ImageButton
+                        android:id="@+id/zuhaib_gmail"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/gmail"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:contentDescription="@string/todo" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        
+
+    </ScrollView>
+
+</LinearLayout>
